@@ -2,9 +2,35 @@
 @import url("css/normalize.css");
 @import url("css/skeleton.css");
 
-$body-color: slateblue;
+$color-one: #1a0803;
+$color-two: #621302;
+$color-three: #bb3f09;
+$color-four: #ef7d01;
+$color-five: #f8bd55;
+$body-color: white;
 
 body {
   color: $body-color;
-  font-family: sans-serif;
+  background-color: $color-one;
+  font-family: Raleway, sans-serif;
+}
+
+.color-one {
+  color: $color-one;
+}
+
+.color-two {
+  color: $color-two;
+}
+
+.color-three {
+  color: $color-three;
+}
+
+.color-four {
+  color: $color-four;
+}
+
+.color-five {
+  color: $color-five;
 }

@@ -1,5 +1,8 @@
 import '../styles/index.scss';
 
+// https://www.colourlovers.com/palette/888820/steak_frites
+// #1A0803,#621302,#BB3F09,#EF7D01,#F8BD55
+
 console.log('webpack starterkit');
 
 // Import the functions you need from the SDKs you need
