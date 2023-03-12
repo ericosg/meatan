@@ -8,10 +8,11 @@ $color-three: #bb3f09;
 $color-four: #ef7d01;
 $color-five: #f8bd55;
 $body-color: white;
+$bg-color: $color-one;
 
 body {
   color: $body-color;
-  background-color: $color-one;
+  background-color: $bg-color;
   font-family: Raleway, sans-serif;
 }
 
