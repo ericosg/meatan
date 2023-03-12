@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,600");
-@import url("css/normalize.css");
-@import url("css/skeleton.css");
-
 $color-one: #1a0803;
 $color-two: #621302;
 $color-three: #bb3f09;
@@ -9,6 +5,10 @@ $color-four: #ef7d01;
 $color-five: #f8bd55;
 $body-color: white;
 $bg-color: $color-one;
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,600");
+@import url("css/normalize.css");
+@import url("css/skeleton.css");
 
 body {
   color: $body-color;
