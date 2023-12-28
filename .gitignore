@@ -16,3 +16,4 @@ yarn.lock
 .firebase
 .firebase/*
 .firebase/hosting.YnVpbGQ.cache
+.firebase/hosting*
