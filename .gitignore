@@ -15,3 +15,4 @@ yarn.lock
 .idea
 .firebase
 .firebase/*
+.firebase/hosting.YnVpbGQ.cache
