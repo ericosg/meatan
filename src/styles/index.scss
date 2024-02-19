@@ -10,6 +10,7 @@ $bg-color: $color-one;
 @import url("css/normalize.css");
 @import url("css/skeleton.css");
 
+html,
 body {
   color: $body-color;
   background-color: $bg-color;
