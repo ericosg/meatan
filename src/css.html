@@ -18,6 +18,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
+
+  <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -43,18 +45,25 @@
           publishable-key="pk_live_51MixrmL2JYuGwBHeE4MC1SJ5OGlslAxe30kV78XRLAJpNYuvFfJyOAhyQSxmLTWCP4IrtStpAYSVjVj1kW9mieXC00csUl5AS2">
         </stripe-buy-button>
       </div>
-      <div class="one-half column" style="margin-top: 5%">
-        <div>
-          <video class="u-max-full-width" autoplay loop muted playsinline>
-            <source
-              src="https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/lv_0_20240809144506.mp4?alt=media&token=9792a572-0320-47ed-9b16-84b48a18675b"
-              type="video/mp4">
-          </video>
-        </div>
+      <div class="one-half column">
+        <video id="my-video" class="video-js" controls preload="auto" autoplay loop muted playsinline
+          poster="https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/FB_IMG_1723818731917.jpg?alt=media&token=d71323a9-0506-4236-8217-a3aee35672dd"
+          data-setup='{"fluid": true}'>
+          <source
+            src="https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/lv_0_20240809144506.mp4?alt=media&token=9792a572-0320-47ed-9b16-84b48a18675b"
+            type="video/mp4" />
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
       </div>
     </div>
   </div>
   </div>
+
+  <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
 </body>
 
 </html>
