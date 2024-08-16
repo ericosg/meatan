@@ -1,6 +1,6 @@
-$color-one: #1a0803;
+$color-one: #000;
 $color-two: #621302;
-$color-three: #bb3f09;
+$color-three: #d65430;
 $color-four: #ef7d01;
 $color-five: #f8bd55;
 $body-color: white;
@@ -35,4 +35,12 @@ body {
 
 .color-five {
   color: $color-five;
+}
+
+.color-grey {
+  color: #888;
+}
+
+.page-center {
+  margin-top: 25%;
 }

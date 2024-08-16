@@ -31,8 +31,8 @@ module.exports = {
       template: Path.resolve(__dirname, '../src/info.html'),
     }),
     new HtmlWebpackPlugin({
-      filename: 'order.html',
-      template: Path.resolve(__dirname, '../src/order.html'),
+      filename: 'css.html',
+      template: Path.resolve(__dirname, '../src/css.html'),
     }),
   ],
   resolve: {
