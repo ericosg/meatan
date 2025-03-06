@@ -18,44 +18,68 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
   <style type="text/tailwindcss">
     @theme {
-      --color-flame: #d65430;
-    }
-  </style>
+        --color-flame: #d65430;
+        --font-josefin: "Josefin Sans", sans-serif;
+        --font-logo-weight: 700;
+        --font-body-weight: 400;
+      }
+      @layer base {
+        .font-logo {
+          font-family: var(--font-josefin);
+          font-weight: var(--font-logo-weight);
+        }
+        .font-body {
+          font-family: var(--font-josefin);
+          font-weight: var(--font-body-weight);
+        }
+        .text-flame {
+          color: var(--color-flame);
+        }
+      }
+    </style>
 </head>
 
-<body class="bg-white text-black font-serif">
+<body class="bg-black text-white bg-fixed bg-bottom bg-no-repeat font-body"
+  style="background-image: url('https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/fixed.jpg?alt=media&token=21fb2809-23ef-484e-afe1-91d395f73c77');">
   <div class="max-w-3xl mx-auto p-4">
     <header class="mb-8 text-center">
-      <h1 class="text-4xl font-bold mb-2">Fine Dining Steak Night Menu</h1>
+      <div class="mb-4">
+        <h1 class="font-logo text-5xl text-flame">meatan</h1>
+      </div>
+      <h2 class="text-4xl font-bold mb-2">Fine Dining Steak Night Menu</h2>
       <p class="text-lg">Date: 22nd March 2025</p>
     </header>
     <main class="space-y-8">
       <section class="border-t pt-4">
-        <h2 class="text-2xl font-semibold">Scottish T-Bone</h2>
+        <h3 class="text-2xl font-semibold">Scottish T-Bone</h3>
         <p class="mt-1">Minimum cut: 500g (up to 1200g)</p>
         <p class="mt-1">Price: €2.80 per 100g (equivalent to €28/kg)</p>
       </section>
       <section class="border-t pt-4">
-        <h2 class="text-2xl font-semibold">Scottish Bone-In Ribeye</h2>
+        <h3 class="text-2xl font-semibold">Scottish Bone-In Ribeye</h3>
         <p class="mt-1">Minimum cut: 600g (up to 1200g)</p>
         <p class="mt-1">Price: €2.80 per 100g (equivalent to €28/kg)</p>
       </section>
       <section class="border-t pt-4">
-        <h2 class="text-2xl font-semibold">USDA Choice Sirloin (Grain-Fed)</h2>
+        <h3 class="text-2xl font-semibold">USDA Choice Sirloin (Grain-Fed)</h3>
         <p class="mt-1">Price: €3.00 per 100g (equivalent to €30/kg)</p>
       </section>
       <section class="border-t pt-4">
-        <h2 class="text-2xl font-semibold">Australian Ribeye</h2>
+        <h3 class="text-2xl font-semibold">Australian Ribeye</h3>
         <p class="mt-1">Price: €3.80 per 100g (equivalent to €38/kg)</p>
       </section>
       <section class="border-t pt-4">
-        <h2 class="text-2xl font-semibold">Argentinian Picanha (Devesa)</h2>
+        <h3 class="text-2xl font-semibold">Argentinian Picanha (Devesa)</h3>
         <p class="mt-1">Price: €2.60 per 100g (equivalent to €26/kg)</p>
       </section>
       <section class="border-t pt-4">
-        <h2 class="text-2xl font-semibold">Australian Wagyu Tomahawk (Marbling Score 9)</h2>
+        <h3 class="text-2xl font-semibold">Australian Wagyu Tomahawk (Marbling Score 9)</h3>
         <p class="mt-1">Approximately 1.25kg per portion</p>
         <p class="mt-1">Limited Availability (only 4 portions)</p>
         <p class="mt-1">Price: €11.00 per 100g (equivalent to €110/kg)</p>
