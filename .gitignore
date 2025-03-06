@@ -18,3 +18,4 @@ yarn.lock
 .firebase/hosting.YnVpbGQ.cache
 .firebase/hosting*
 *.cache
+firebase-debug.log
