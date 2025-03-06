@@ -35,8 +35,8 @@
     @theme {
       --color-flame: #d65430;
       --font-josefin: "Josefin Sans", sans-serif;
-      --font-logo-weight: 400;
-      --font-body-weight: 300;
+      --font-logo-weight: 300;
+      --font-body-weight: 200;
     }
     @layer base {
       .font-logo {
@@ -61,10 +61,26 @@
       <div class="mb-4">
         <h1 class="font-logo text-5xl text-flame">meatan</h1>
       </div>
-      <h2 class="text-2xl mb-2">Fine Dining Steak Night Menu</h2>
+      <h2 class="text-2xl mb-2">steak night</h2>
       <p class="text-sm">Date: 22<sup>nd</sup> March 2025</p>
+      <p class="text-sm">Dinner opens at 7:30pm</p>
+      <p class="text-sm">Preorders must be made before 17<sup>th</sup> March</p>
     </header>
     <main class="space-y-8">
+      <!-- Set Menu Section -->
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="text-xl">Set Menu Experience</h3>
+        <p class="mt-1 text-sm">
+          Enjoy a curated set menu featuring a starter, four sides, and a dessert
+        </p>
+        <p class="mt-1 text-sm">
+          Fixed Experience Price: €20 per person (steak selection extra, drinks excluded).
+        </p>
+        <p class="mt-1 text-sm">
+          Each stage of your dining experience is paired with tailored beverage recommendations
+        </p>
+      </section>
+      <!-- Steak Menu Sections -->
       <section class="border-t border-white/30 pt-4">
         <h3 class="text-xl">Argentinian Picanha (Devesa)</h3>
         <p class="mt-1 text-sm">Price: €2.60 per 100g (equivalent to €26/kg)</p>
@@ -94,6 +110,21 @@
         <p class="mt-1 text-sm">Price: €11.00 per 100g (equivalent to €110/kg)</p>
       </section>
     </main>
+    <!-- Map Section -->
+    <footer class="mt-8">
+      <div class="border-t border-white/30 pt-4">
+        <h3 class="text-xl text-center">Our Location</h3>
+        <p class="text-sm text-center mb-4">
+          Antonakis Bar Restaurant, ΓΕΡΜΑΝΟΥ ΠΑΤΡΩΝ 18, Vasiliou Voulgaroktonou 17, Nicosia 1010, Cyprus
+        </p>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13045.288383276584!2d33.34842053630462!3d35.17352379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1745565e57d1%3A0xa2e3ba5012458821!2sAntonakis%20Bar%20Restaurant!5e0!3m2!1sen!2s!4v1741283779223!5m2!1sen!2s"
+            width="600" height="450" style="border:0; filter: brightness(0.7);" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 
