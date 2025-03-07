@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>meatan</title>
+  <meta name="keywords" content="meatan, steak, restaurant, dining, food, Cyprus, Nicosia">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="I don't eat what my food eats.">
+  <meta name="author" content="eric georgiades">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d65430">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#d65430">
+  <meta name="apple-mobile-web-app-title" content="meatan">
+  <meta name="application-name" content="meatan">
+  <meta property="og:site_name" content="meatan" />
+  <meta property="og:description" content="I don't eat what my food eats." />
+  <meta property="og:title" content="meatan | 54°" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://meatan.com/" />
+  <meta property="og:image"
+    content="https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/cover.jpg?alt=media&token=0d95a32d-4264-4fbd-8563-42868e939bfd" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS custom configuration for fonts and colors -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-one: #000;
+      --color-two: #d3d3d3;
+      --color-three: #d65430;
+      --color-four: #ef7d01;
+      --color-five: #f8bd55;
+      --body-color: white;
+      --bg-color: var(--color-one);
+      
+      --font-logo: "Josefin Sans", sans-serif;
+      --font-body: "Lato", sans-serif;
+      --font-logo-weight: 300;
+    }
+    @layer base {
+      body {
+        font-family: var(--font-body);
+        background-color: var(--bg-color);
+        color: var(--body-color);
+      }
+      .font-logo {
+        font-family: var(--font-logo);
+        font-optical-sizing: auto;
+        font-weight: var(--font-logo-weight);
+      }
+      .text-flame {
+        color: var(--color-three);
+      }
+      .text-highlight {
+        color: var(--color-five);
+      }
+      .menu-heading {
+        font-family: var(--font-body);
+        font-weight: 400;
+        color: var(--color-three);
+      }
+      .menu-item {
+        font-family: var(--font-body);
+        font-weight: 300;
+        color: var(--body-color);
+      }
+      .menu-description {
+        font-family: var(--font-body);
+        font-weight: 300;
+        color: var(--body-color);
+      }
+      .menu-alt-description {
+        margin-top: 1rem;
+        color: var(--color-four);
+      }
+    }
+  </style>
+</head>
+
+<body class="subpixel-antialiased bg-fixed bg-left-bottom bg-no-repeat"
+  style="background-image: url('https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/cover_corner.jpg?alt=media&token=865f8201-5349-472f-82f0-10a9c8e64835');">
+  <div class="max-w-3xl mx-auto p-4">
+    <header class="mb-8 text-center">
+      <div class="mb-4">
+        <!-- The logo uses the custom font-logo class -->
+        <h1 class="font-logo text-7xl text-flame">meatan <span class="text-white">| 54°</span></h1>
+      </div>
+      <!-- The title "steak night" uses the logo font -->
+      <h2 class="font-logo text-4xl mb-2 text-flame">steak night</h2>
+      <p class="text-lg">Date: 22<sup>nd</sup> March 2025</p>
+      <p class="text-base">Dinner opens at 7:30pm</p>
+      <p class="text-base">Preorders must be made <span class="text-highlight">before 17<sup>th</sup> March</span></p>
+    </header>
+    <main class="space-y-8">
+      <!-- Set Menu Section -->
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl">Set Menu Experience</h3>
+        <p class="menu-description mt-1 text-sm">
+          Enjoy a curated set menu featuring a starter, four sides, and a dessert.
+        </p>
+        <p class="menu-description mt-1 text-sm">
+          Fixed Experience Price: <span class="text-highlight">€20 per person (without steak, drinks excluded).</span>
+        </p>
+        <p class="menu-description mt-1 text-sm">
+          Each stage of your dining experience is paired with tailored beverage recommendations.
+        </p>
+      </section>
+      <!-- Steak Menu Sections -->
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl">Argentinian Picanha</h3>
+        <p class="menu-item mt-1 text-sm">Price: €4.50 per 100g (equivalent to €45/kg)</p>
+        <p class="menu-alt-description text-sm italic">
+          Sourced from the esteemed Devesa tradition, this picanha embodies the rich flavors of South America with a
+          tender, robust profile ideal for authentic grilling.
+        </p>
+      </section>
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl">Scottish T-Bone</h3>
+        <p class="menu-item mt-1 text-sm">Minimum cut: 500g (up to 1200g)</p>
+        <p class="menu-item mt-1 text-sm">Price: €4.70 per 100g (equivalent to €47/kg)</p>
+        <p class="menu-alt-description text-sm italic">
+          Hailing from Scotland’s verdant highlands, this generous T-Bone cut is celebrated for its hearty flavor and
+          versatile portion sizes, perfect for crafting memorable meals.
+        </p>
+      </section>
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl">Scottish Bone-In Ribeye</h3>
+        <p class="menu-item mt-1 text-sm">Minimum cut: 600g (up to 1200g)</p>
+        <p class="menu-item mt-1 text-sm">Price: €4.70 per 100g (equivalent to €47/kg)</p>
+        <p class="menu-alt-description text-sm italic">
+          Expertly selected from Scotland’s finest cattle, this bone-in ribeye offers enhanced juiciness and deep
+          flavor, making it a refined choice for gourmet dining.
+        </p>
+      </section>
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl">American Sirloin</h3>
+        <p class="menu-item mt-1 text-sm">Price: €4.90 per 100g (equivalent to €49/kg)</p>
+        <p class="menu-alt-description text-sm italic">
+          Grain-fed to perfection, this sirloin exemplifies consistent marbling and a robust flavor profile, showcasing
+          the classic quality that American beef is known for.
+        </p>
+      </section>
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl">Australian Ribeye</h3>
+        <p class="menu-item mt-1 text-sm">Price: €5.70 per 100g (equivalent to €57/kg)</p>
+        <p class="menu-alt-description text-sm italic">
+          Raised on Australia’s pristine pastures, our premium ribeye is renowned for its exquisite marbling and
+          sophisticated flavor profile that delights the palate.
+        </p>
+      </section>
+      <section class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl">Australian Wagyu Tomahawk</h3>
+        <p class="menu-item mt-1 text-sm">Approximately 1.25kg per portion</p>
+        <p class="menu-item mt-1 text-sm">Limited Availability (only 4 portions)</p>
+        <p class="menu-item mt-1 text-sm">Price: €12.90 per 100g (equivalent to €129/kg)</p>
+        <p class="menu-alt-description text-sm italic">
+          An exclusive indulgence boasting an exceptional marbling score of 9, this tomahawk offers unparalleled
+          tenderness in a generous 1.25kg cut. Designed to serve 3-4 guests, it promises a luxurious dining experience.
+        </p>
+      </section>
+    </main>
+    <!-- Map Section -->
+    <footer class="mt-8">
+      <div class="border-t border-white/30 pt-4">
+        <h3 class="menu-heading text-xl text-center">Our Location</h3>
+        <p class="menu-item text-sm text-center mb-4">
+          Antonakis Bar Restaurant, Vasiliou Voulgaroktonou 17, Nicosia 1010, Cyprus
+        </p>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13045.288383276584!2d33.34842053630462!3d35.17352379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1745565e57d1%3A0xa2e3ba5012458821!2sAntonakis%20Bar%20Restaurant!5e0!3m2!1sen!2s!4v1741283779223!5m2!1sen!2s"
+            width="600" height="450" style="border:0; filter: brightness(0.7);" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
