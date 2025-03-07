@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>meatan</title>
+  <meta name="keywords" content="meatan, steak, restaurant, dining, food, Cyprus, Nicosia">
+  <meta name="robots" content="index, follow">
   <meta name="description" content="I don't eat what my food eats.">
   <meta name="author" content="eric georgiades">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +36,6 @@
   <!-- Tailwind CSS custom configuration for fonts and colors -->
   <style type="text/tailwindcss">
     @theme {
-      /* Color Variables */
       --color-one: #000;
       --color-two: #621302;
       --color-three: #d65430;
@@ -42,62 +43,60 @@
       --color-five: #f8bd55;
       --body-color: white;
       --bg-color: var(--color-one);
-      --color-flame: var(--color-three);
       
-      /* Font Variables */
       --font-logo: "Josefin Sans", sans-serif;
       --font-body: "Lato", sans-serif;
       --font-logo-weight: 300;
     }
     @layer base {
-      /* Global styles */
       body {
         font-family: var(--font-body);
         background-color: var(--bg-color);
         color: var(--body-color);
       }
-      /* Logo styling */
       .font-logo {
         font-family: var(--font-logo);
         font-optical-sizing: auto;
         font-weight: var(--font-logo-weight);
       }
       .text-flame {
-        color: var(--color-flame);
+        color: var(--color-three);
       }
-      /* Custom menu classes */
+      .text-highlight {
+        color: var(--color-five);
+      }
       .menu-heading {
         font-family: var(--font-body);
-        font-weight: 300;
-        color: var(--color-four);
+        font-weight: 400;
+        color: var(--color-three);
       }
       .menu-item {
         font-family: var(--font-body);
-        font-weight: 200; /* thinner font */
-        color: var(--color-two);
+        font-weight: 300;
+        color: var(--body-color);
       }
       .menu-description {
         font-family: var(--font-body);
-        font-weight: 200;
-        color: var(--color-five);
+        font-weight: 300;
+        color: var(--body-color);
       }
     }
   </style>
 </head>
 
-<body class="bg-fixed bg-left-bottom bg-no-repeat"
+<body class="subpixel-antialiased bg-fixed bg-left-bottom bg-no-repeat"
   style="background-image: url('https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/cover_corner.jpg?alt=media&token=865f8201-5349-472f-82f0-10a9c8e64835');">
   <div class="max-w-3xl mx-auto p-4">
     <header class="mb-8 text-center">
       <div class="mb-4">
         <!-- The logo uses the custom font-logo class -->
-        <h1 class="font-logo text-7xl text-flame">meatan</h1>
+        <h1 class="font-logo text-7xl text-flame">meatan <span class="text-white">| 54°</span></h1>
       </div>
       <!-- The title "steak night" uses the logo font -->
-      <h2 class="font-logo text-4xl mb-2">steak night</h2>
+      <h2 class="font-logo text-4xl mb-2 text-flame">steak night</h2>
       <p class="text-lg">Date: 22<sup>nd</sup> March 2025</p>
       <p class="text-base">Dinner opens at 7:30pm</p>
-      <p class="text-base">Preorders must be made before 17<sup>th</sup> March</p>
+      <p class="text-base">Preorders must be made <span class="text-highlight">before 17<sup>th</sup> March</p></span>
     </header>
     <main class="space-y-8">
       <!-- Set Menu Section -->
@@ -107,7 +106,7 @@
           Enjoy a curated set menu featuring a starter, four sides, and a dessert.
         </p>
         <p class="menu-description mt-1 text-sm">
-          Fixed Experience Price: €20 per person (without steak, drinks excluded).
+          Fixed Experience Price: <span class="text-highlight">€20 per person (without steak, drinks excluded).</span>
         </p>
         <p class="menu-description mt-1 text-sm">
           Each stage of your dining experience is paired with tailored beverage recommendations.
@@ -133,7 +132,7 @@
         <p class="menu-item mt-1 text-sm">Price: €4.90 per 100g (equivalent to €49/kg)</p>
       </section>
       <section class="border-t border-white/30 pt-4">
-        <h3 class="menu-heading text-xl">Australian Ribeye</h3>
+        <h3 class="menu-heading text-xl">Australian Ribeye (Premium)</h3>
         <p class="menu-item mt-1 text-sm">Price: €5.70 per 100g (equivalent to €57/kg)</p>
       </section>
       <section class="border-t border-white/30 pt-4">
