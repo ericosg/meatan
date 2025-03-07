@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>meatan</title>
-
   <meta name="description" content="I don't eat what my food eats.">
   <meta name="author" content="eric georgiades">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,24 +28,30 @@
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+
+  <!-- Tailwind CSS custom configuration for fonts -->
   <style type="text/tailwindcss">
     @theme {
       --color-flame: #d65430;
-      --font-josefin: "Josefin Sans", sans-serif;
+      --font-logo: "Josefin Sans", sans-serif;
+      --font-body: "Lato", sans-serif;
       --font-logo-weight: 300;
-      --font-body-weight: 200;
     }
     @layer base {
+      /* Set default font to Lato for the entire document */
+      body {
+        font-family: var(--font-body);
+      }
+      /* Custom class to apply Josefin Sans for logo & title */
       .font-logo {
-        font-family: var(--font-josefin);
+        font-family: var(--font-logo);
+        font-optical-sizing: auto;
         font-weight: var(--font-logo-weight);
       }
-      .font-body {
-        font-family: var(--font-josefin);
-        font-weight: var(--font-body-weight);
-      }
+      /* Optional: Define a text color class for flame */
       .text-flame {
         color: var(--color-flame);
       }
@@ -54,30 +59,32 @@
   </style>
 </head>
 
-<body class="bg-black text-white bg-fixed bg-left-bottom bg-no-repeat font-body"
+<body class="bg-black text-white bg-fixed bg-left-bottom bg-no-repeat"
   style="background-image: url('https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/cover_corner.jpg?alt=media&token=865f8201-5349-472f-82f0-10a9c8e64835');">
   <div class="max-w-3xl mx-auto p-4">
     <header class="mb-8 text-center">
       <div class="mb-4">
-        <h1 class="font-logo text-5xl text-flame">meatan</h1>
+        <!-- The logo uses the custom font-logo class -->
+        <h1 class="font-logo text-7xl text-flame">meatan</h1>
       </div>
-      <h2 class="text-2xl mb-2">steak night</h2>
-      <p class="text-sm">Date: 22<sup>nd</sup> March 2025</p>
-      <p class="text-sm">Dinner opens at 7:30pm</p>
-      <p class="text-sm">Preorders must be made before 17<sup>th</sup> March</p>
+      <!-- The title "steak night" also uses the custom font-logo class -->
+      <h2 class="font-logo text-4xl mb-2">steak night</h2>
+      <p class="text-lg">Date: 22<sup>nd</sup> March 2025</p>
+      <p class="text-base">Dinner opens at 7:30pm</p>
+      <p class="text-base">Preorders must be made before 17<sup>th</sup> March</p>
     </header>
     <main class="space-y-8">
       <!-- Set Menu Section -->
       <section class="border-t border-white/30 pt-4">
         <h3 class="text-xl">Set Menu Experience</h3>
         <p class="mt-1 text-sm">
-          Enjoy a curated set menu featuring a starter, four sides, and a dessert
+          Enjoy a curated set menu featuring a starter, four sides, and a dessert.
         </p>
         <p class="mt-1 text-sm">
-          Fixed Experience Price: €20 per person (steak selection extra, drinks excluded).
+          Fixed Experience Price: €20 per person (without steak, drinks excluded).
         </p>
         <p class="mt-1 text-sm">
-          Each stage of your dining experience is paired with tailored beverage recommendations
+          Each stage of your dining experience is paired with tailored beverage recommendations.
         </p>
       </section>
       <!-- Steak Menu Sections -->
@@ -115,7 +122,7 @@
       <div class="border-t border-white/30 pt-4">
         <h3 class="text-xl text-center">Our Location</h3>
         <p class="text-sm text-center mb-4">
-          Antonakis Bar Restaurant, ΓΕΡΜΑΝΟΥ ΠΑΤΡΩΝ 18, Vasiliou Voulgaroktonou 17, Nicosia 1010, Cyprus
+          Antonakis Bar Restaurant, Vasiliou Voulgaroktonou 17, Nicosia 1010, Cyprus
         </p>
         <div class="flex justify-center">
           <iframe
