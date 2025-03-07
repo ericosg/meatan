@@ -11,7 +11,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#d65430">
   <meta name="apple-mobile-web-app-title" content="meatan">
   <meta name="application-name" content="meatan">
-
   <meta property="og:site_name" content="meatan" />
   <meta property="og:description" content="I don't eat what my food eats." />
   <meta property="og:title" content="meatan | 54°" />
@@ -32,34 +31,61 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
 
-  <!-- Tailwind CSS custom configuration for fonts -->
+  <!-- Tailwind CSS custom configuration for fonts and colors -->
   <style type="text/tailwindcss">
     @theme {
-      --color-flame: #d65430;
+      /* Color Variables */
+      --color-one: #000;
+      --color-two: #621302;
+      --color-three: #d65430;
+      --color-four: #ef7d01;
+      --color-five: #f8bd55;
+      --body-color: white;
+      --bg-color: var(--color-one);
+      --color-flame: var(--color-three);
+      
+      /* Font Variables */
       --font-logo: "Josefin Sans", sans-serif;
       --font-body: "Lato", sans-serif;
       --font-logo-weight: 300;
     }
     @layer base {
-      /* Set default font to Lato for the entire document */
+      /* Global styles */
       body {
         font-family: var(--font-body);
+        background-color: var(--bg-color);
+        color: var(--body-color);
       }
-      /* Custom class to apply Josefin Sans for logo & title */
+      /* Logo styling */
       .font-logo {
         font-family: var(--font-logo);
         font-optical-sizing: auto;
         font-weight: var(--font-logo-weight);
       }
-      /* Optional: Define a text color class for flame */
       .text-flame {
         color: var(--color-flame);
+      }
+      /* Custom menu classes */
+      .menu-heading {
+        font-family: var(--font-body);
+        font-weight: 300;
+        color: var(--color-four);
+      }
+      .menu-item {
+        font-family: var(--font-body);
+        font-weight: 200; /* thinner font */
+        color: var(--color-two);
+      }
+      .menu-description {
+        font-family: var(--font-body);
+        font-weight: 200;
+        color: var(--color-five);
       }
     }
   </style>
 </head>
 
-<body class="bg-black text-white bg-fixed bg-left-bottom bg-no-repeat"
+<body class="bg-fixed bg-left-bottom bg-no-repeat"
   style="background-image: url('https://firebasestorage.googleapis.com/v0/b/meatan.appspot.com/o/cover_corner.jpg?alt=media&token=865f8201-5349-472f-82f0-10a9c8e64835');">
   <div class="max-w-3xl mx-auto p-4">
     <header class="mb-8 text-center">
@@ -67,7 +93,7 @@
         <!-- The logo uses the custom font-logo class -->
         <h1 class="font-logo text-7xl text-flame">meatan</h1>
       </div>
-      <!-- The title "steak night" also uses the custom font-logo class -->
+      <!-- The title "steak night" uses the logo font -->
       <h2 class="font-logo text-4xl mb-2">steak night</h2>
       <p class="text-lg">Date: 22<sup>nd</sup> March 2025</p>
       <p class="text-base">Dinner opens at 7:30pm</p>
@@ -76,52 +102,52 @@
     <main class="space-y-8">
       <!-- Set Menu Section -->
       <section class="border-t border-white/30 pt-4">
-        <h3 class="text-xl">Set Menu Experience</h3>
-        <p class="mt-1 text-sm">
+        <h3 class="menu-heading text-xl">Set Menu Experience</h3>
+        <p class="menu-description mt-1 text-sm">
           Enjoy a curated set menu featuring a starter, four sides, and a dessert.
         </p>
-        <p class="mt-1 text-sm">
+        <p class="menu-description mt-1 text-sm">
           Fixed Experience Price: €20 per person (without steak, drinks excluded).
         </p>
-        <p class="mt-1 text-sm">
+        <p class="menu-description mt-1 text-sm">
           Each stage of your dining experience is paired with tailored beverage recommendations.
         </p>
       </section>
       <!-- Steak Menu Sections -->
       <section class="border-t border-white/30 pt-4">
-        <h3 class="text-xl">Argentinian Picanha (Devesa)</h3>
-        <p class="mt-1 text-sm">Price: €4.50 per 100g (equivalent to €45/kg)</p>
+        <h3 class="menu-heading text-xl">Argentinian Picanha (Devesa)</h3>
+        <p class="menu-item mt-1 text-sm">Price: €4.50 per 100g (equivalent to €45/kg)</p>
       </section>
       <section class="border-t border-white/30 pt-4">
-        <h3 class="text-xl">Scottish T-Bone</h3>
-        <p class="mt-1 text-sm">Minimum cut: 500g (up to 1200g)</p>
-        <p class="mt-1 text-sm">Price: €4.70 per 100g (equivalent to €47/kg)</p>
+        <h3 class="menu-heading text-xl">Scottish T-Bone</h3>
+        <p class="menu-item mt-1 text-sm">Minimum cut: 500g (up to 1200g)</p>
+        <p class="menu-item mt-1 text-sm">Price: €4.70 per 100g (equivalent to €47/kg)</p>
       </section>
       <section class="border-t border-white/30 pt-4">
-        <h3 class="text-xl">Scottish Bone-In Ribeye</h3>
-        <p class="mt-1 text-sm">Minimum cut: 600g (up to 1200g)</p>
-        <p class="mt-1 text-sm">Price: €4.70 per 100g (equivalent to €47/kg)</p>
+        <h3 class="menu-heading text-xl">Scottish Bone-In Ribeye</h3>
+        <p class="menu-item mt-1 text-sm">Minimum cut: 600g (up to 1200g)</p>
+        <p class="menu-item mt-1 text-sm">Price: €4.70 per 100g (equivalent to €47/kg)</p>
       </section>
       <section class="border-t border-white/30 pt-4">
-        <h3 class="text-xl">USDA Choice Sirloin (Grain-Fed)</h3>
-        <p class="mt-1 text-sm">Price: €4.90 per 100g (equivalent to €49/kg)</p>
+        <h3 class="menu-heading text-xl">USDA Choice Sirloin (Grain-Fed)</h3>
+        <p class="menu-item mt-1 text-sm">Price: €4.90 per 100g (equivalent to €49/kg)</p>
       </section>
       <section class="border-t border-white/30 pt-4">
-        <h3 class="text-xl">Australian Ribeye</h3>
-        <p class="mt-1 text-sm">Price: €5.70 per 100g (equivalent to €57/kg)</p>
+        <h3 class="menu-heading text-xl">Australian Ribeye</h3>
+        <p class="menu-item mt-1 text-sm">Price: €5.70 per 100g (equivalent to €57/kg)</p>
       </section>
       <section class="border-t border-white/30 pt-4">
-        <h3 class="text-xl">Australian Wagyu Tomahawk (Marbling Score 9)</h3>
-        <p class="mt-1 text-sm">Approximately 1.25kg per portion</p>
-        <p class="mt-1 text-sm">Limited Availability (only 4 portions)</p>
-        <p class="mt-1 text-sm">Price: €12.90 per 100g (equivalent to €129/kg)</p>
+        <h3 class="menu-heading text-xl">Australian Wagyu Tomahawk (Marbling Score 9)</h3>
+        <p class="menu-item mt-1 text-sm">Approximately 1.25kg per portion</p>
+        <p class="menu-item mt-1 text-sm">Limited Availability (only 4 portions)</p>
+        <p class="menu-item mt-1 text-sm">Price: €12.90 per 100g (equivalent to €129/kg)</p>
       </section>
     </main>
     <!-- Map Section -->
     <footer class="mt-8">
       <div class="border-t border-white/30 pt-4">
-        <h3 class="text-xl text-center">Our Location</h3>
-        <p class="text-sm text-center mb-4">
+        <h3 class="menu-heading text-xl text-center">Our Location</h3>
+        <p class="menu-item text-sm text-center mb-4">
           Antonakis Bar Restaurant, Vasiliou Voulgaroktonou 17, Nicosia 1010, Cyprus
         </p>
         <div class="flex justify-center">
